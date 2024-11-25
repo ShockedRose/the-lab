@@ -1,0 +1,21 @@
+---
+import { ReactGlowComponent } from "../../components/ReactGlow";
+import BlogPostLayout from "../../layouts/BlogPostLayout.astro";
+
+export const pubDate = "2020-01-28";
+
+let title = "Glow With React Glow";
+let description = "hello";
+---
+
+<BlogPostLayout
+	content={{
+		title,
+		description,
+		date: pubDate,
+		hero: undefined,
+		youtube: undefined,
+	}}
+>
+	<ReactGlowComponent client:load />
+</BlogPostLayout>

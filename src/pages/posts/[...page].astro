@@ -8,6 +8,8 @@ import Paginator from '../../components/Paginator.astro'
 
 export async function getStaticPaths({ paginate }) {
   const allPosts = await Astro.glob<MarkdownFrontmatter>('./*.md');
+  (await Astro.glob<MarkdownFrontmatter>('./*.tsx.astro')).forEach(post => allPosts.push({...post, frontmatter: post.pubDate }));
+    
   const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 
 
