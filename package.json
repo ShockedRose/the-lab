@@ -10,7 +10,8 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^4.16.8",
+
+    "astro": "^4.16.10",
     "globby": "^14.0.1",
     "mark.js": "^8.11.1",
     "sass": "^1.77.8",
@@ -18,13 +19,13 @@
   },
   "dependencies": {
     "@astrojs/react": "^3.6.2",
-    "@astrojs/rss": "^4.0.5",
-    "@astrojs/sitemap": "^3.2.0",
     "@codaworks/react-glow": "^1.0.6",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "autoprefixer": "^10.4.19",
-    "dayjs": "^1.11.12",
+    "@astrojs/rss": "^4.0.9",
+    "@astrojs/sitemap": "^3.2.0",
+    "autoprefixer": "^10.4.20",
+    "dayjs": "^1.11.13",
     "lunr": "^2.3.9",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

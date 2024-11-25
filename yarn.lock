@@ -69,7 +69,7 @@
   resolved "https://registry.npmjs.org/@astrojs/rss/-/rss-4.0.5.tgz"
   integrity sha512-IyJVL6z09AQtxbgLaAwebT3T5YKe4oTHDesqydJv1KLHw+zEzzMCFuuNsEyxjiqu7df9+DDCpDXLj/WRiEUXvw==
   dependencies:
-    fast-xml-parser "^4.2.7"
+    fast-xml-parser "^4.5.0"
     kleur "^4.1.5"
 
 "@astrojs/sitemap@^3.2.0":
@@ -1031,7 +1031,7 @@ astro@^4.16.8:
     micromatch "^4.0.8"
     mrmime "^2.0.0"
     neotraverse "^0.6.18"
-    ora "^8.1.0"
+    ora "^8.1.1"
     p-limit "^6.1.0"
     p-queue "^8.0.1"
     preferred-pm "^4.0.0"
@@ -1059,11 +1059,11 @@ autoprefixer@^10.4.19:
   resolved "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.19.tgz"
   integrity sha512-BaENR2+zBZ8xXhM4pUaKUxlVdxZ0EZhjvbopwnXmxRUfqDmwSpC2lAi/QXvx7NRdPCo1WKEcEF6mV64si1z4Ew==
   dependencies:
-    browserslist "^4.23.0"
-    caniuse-lite "^1.0.30001599"
+    browserslist "^4.23.3"
+    caniuse-lite "^1.0.30001646"
     fraction.js "^4.3.7"
     normalize-range "^0.1.2"
-    picocolors "^1.0.0"
+    picocolors "^1.0.1"
     postcss-value-parser "^4.2.0"
 
 axobject-query@^4.1.0:
@@ -1138,7 +1138,7 @@ browserslist@^4.24.0:
     caniuse-lite "^1.0.30001663"
     electron-to-chromium "^1.5.28"
     node-releases "^2.0.18"
-    update-browserslist-db "^1.1.0"
+    update-browserslist-db "^1.1.1"
 
 camelcase-css@^2.0.1:
   version "2.0.1"
