@@ -1,31 +1,27 @@
 import { Glow, GlowCapture } from "@codaworks/react-glow";
-import { useState } from "react";
 
 export const ReactGlowComponent = () => {
 	return (
 		<>
-			<p className="mb-4">
-				This experiment uses the{" "}
-				<a
-					href="https://github.com/codaworks/react-glow"
-					className="font-mono"
-				>
-					react-glow
-				</a>{" "}
-				library
-			</p>
-			<GlowCapture>
-				<div className="flex justify-between">
-					<div className="border p-4 border-black rounded-lg">
-						<p>This won't glow</p>
-					</div>
-					<Glow color="purple">
-						<div className="border p-4 border-black rounded-lg text-black glow:text-glow/50 glow:bg-red-100">
-							This will glow purple when the mouse is passed over
+			<section className="w-[80%] mx-auto">
+				<GlowCapture>
+					<div className="flex justify-between flex-1">
+						<div className="border content-center font-bold p-4 border-black rounded-lg h-40">
+							<p>This won't glow</p>
 						</div>
-					</Glow>
-				</div>
-			</GlowCapture>
+						<Glow color="blue" className="max-w-50 flex-1">
+							<div className="border content-center h-40 font-bold p-4 border-black rounded-lg text-black glow:text-glow/50 glow:bg-blue-100">
+								This glows blue
+							</div>
+						</Glow>
+						<Glow color="red" className="max-w-50 flex-1">
+							<div className="border content-center h-40 font-bold p-4 border-black rounded-lg text-black glow:text-glow/50 glow:bg-red-100">
+								This glows red
+							</div>
+						</Glow>
+					</div>
+				</GlowCapture>
+			</section>
 		</>
 	);
 };

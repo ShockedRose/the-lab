@@ -1,5 +1,5 @@
 {
-  "name": "astro-theme-creek",
+  "name": "the-lab",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,6 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-
     "astro": "^4.16.10",
     "globby": "^14.0.1",
     "mark.js": "^8.11.1",
