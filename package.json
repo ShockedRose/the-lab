@@ -18,15 +18,15 @@
   "dependencies": {
     "@astrojs/react": "^4.1.2",
     "@codaworks/react-glow": "^1.0.6",
-    "@types/react": "^18.3.12",
+    "@types/react": "^19.0.2",
     "@types/react-dom": "^18.3.1",
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.0",
     "autoprefixer": "^10.4.20",
     "dayjs": "^1.11.13",
     "lunr": "^2.3.9",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "sitemap": "^7.1.1"
   }
 }
