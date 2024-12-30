@@ -2,28 +2,34 @@
 import { ReactGlowComponent } from "../../components/ReactGlow";
 import BlogPostLayout from "../../layouts/BlogPostLayout.astro";
 
-export const pubDate = "2024-12-26";
+export const pubDate = "2024-12-29";
 
 export const title = "Glow With React Glow";
-export const description = "hello";
+export const description = "A library to highlight cards with hover colors";
 export const hero = "/images/glow-with-react-glow.png";
 ---
 
 <BlogPostLayout
 	content={{
-		title,
-		description,
+		title: title,
+		description: description,
 		date: pubDate,
 		hero: hero,
 		youtube: undefined,
 	}}
 >
-	<h2>This library shines your cards</h2>
+	<h2 class="my-0">This library shines your cards</h2>
 	<p>
 		With React Glow, you can easily make a set of cards with a cool hovering
 		effect and it's also <em class="italic">connected glow</em>.
 	</p>
-	<p class="">
+	<p>
+		This library is ideal to bring attention to informative section of the
+		page, could be pay plans, could be benefits or good reviews
+	</p>
+
+	<ReactGlowComponent client:load />
+	<p class="py-8">
 		You can find this library at <a
 			href="https://github.com/codaworks/react-glow"
 			class="font-mono"
@@ -31,5 +37,4 @@ export const hero = "/images/glow-with-react-glow.png";
 			his author's repository
 		</a>
 	</p>
-	<ReactGlowComponent client:load />
 </BlogPostLayout>

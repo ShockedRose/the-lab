@@ -16,9 +16,9 @@ import Footer from "../../components/Footer/Footer.astro";
 import Paginator from "../../components/Paginator.astro";
 
 export async function getStaticPaths({ paginate }) {
-	const allPosts = (await Astro.glob<MarkdownFrontmatter>(
-		"./*.(md|tsx.astro)"
-	)).map((post) =>
+	const allPosts = (
+		await Astro.glob<MarkdownFrontmatter>("./*.(md|tsx.astro)")
+	).map((post) =>
 		post.frontmatter ? post : { ...post, frontmatter: { ...post } }
 	);
 
@@ -45,9 +45,7 @@ let seoDescription = "";
 		<BaseHead title={seoTitle} description={seoDescription} />
 	</head>
 
-	<body
-		class="bg-white text-black font-body leading-normal personality-casual"
-	>
+	<body class="bg-white text-black leading-normal personality-casual">
 		<Nav />
 
 		<main class="py-12 lg:py-20">

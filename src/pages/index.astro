@@ -16,11 +16,14 @@ import Footer from "../components/Footer/Footer.astro";
 
 interface MarkdownFrontmatter {
 	date: number;
+	pubDate: number;
+	frontmatter: { date: number; pubDate: number };
 }
 
 const title = "The Lab";
 const description = "The blog to showcase and test libraries";
-const seoDescription = "The lab is a blog-like site for library testing and showcase";
+const seoDescription =
+	"The lab is a blog-like site for library testing and showcase";
 
 const allPosts = (
 	await Astro.glob<MarkdownFrontmatter>("./posts/*.(md|tsx.astro)")
@@ -39,9 +42,7 @@ const sortedPosts = allPosts.sort(
 		<BaseHead title={title} description={seoDescription} />
 	</head>
 
-	<body
-		class="bg-white text-black font-body leading-normal personality-casual"
-	>
+	<body class="bg-white text-black leading-normal personality-casual">
 		<Nav />
 
 		<main class="py-12 lg:py-20">
