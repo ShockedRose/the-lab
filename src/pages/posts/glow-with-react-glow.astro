@@ -2,7 +2,7 @@
 import { ReactGlowComponent } from "../../components/ReactGlow";
 import BlogPostLayout from "../../layouts/BlogPostLayout.astro";
 
-export const pubDate = "2024-12-29";
+export const pubDate = "2024-12-30";
 
 export const title = "Glow With React Glow";
 export const description = "A library to highlight cards with hover colors";
@@ -18,23 +18,27 @@ export const hero = "/images/glow-with-react-glow.png";
 		youtube: undefined,
 	}}
 >
-	<h2 class="my-0">This library shines your cards</h2>
-	<p>
+	<h2 class="mt-0 mb-8">This library shines your cards</h2>
+	<p class="m-4 ml-0">
 		With React Glow, you can easily make a set of cards with a cool hovering
 		effect and it's also <em class="italic">connected glow</em>.
 	</p>
-	<p>
+	<p class="m-4 ml-0">
 		This library is ideal to bring attention to informative section of the
 		page, could be pay plans, could be benefits or good reviews
 	</p>
 
 	<ReactGlowComponent client:load />
-	<p class="py-8">
+	<p class="m-4 ml-0">
+		Unfortunately, mobile support for this library (alongside this blog for
+		the time being) is not available
+	</p>
+	<p class="m-4 ml-0">
 		You can find this library at <a
 			href="https://github.com/codaworks/react-glow"
 			class="font-mono"
 		>
-			his author's repository
+			the author's repository
 		</a>
 	</p>
 </BlogPostLayout>
