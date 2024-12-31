@@ -1,13 +1,4 @@
 ---
-/* title: "Installing Go on a Mac"
-pubDate: "2020-02-01"
-slug: "go-basics-1-installing-go-on-a-mac"
-description: "In this article, I am going to show you how to install & setup Go (Golang) on Mac and also setup/configure VS Code for writing Go (Golang) code."
-hero: "/images/Golang-Basics.png"
-tags: ["go"]
-layout: "../../layouts/BlogPostLayout.astro"
-*/
-
 import BaseHead from "../../components/Head/BaseHead.astro";
 import Nav from "../../components/Nav.astro";
 import HomeHeader from "../../components/HomeHeader.astro";
@@ -16,11 +7,11 @@ import Footer from "../../components/Footer/Footer.astro";
 import Paginator from "../../components/Paginator.astro";
 
 export async function getStaticPaths({ paginate }) {
-	const allPosts = (
-		await Astro.glob<MarkdownFrontmatter>("./*.(md|tsx.astro)")
-	).map((post) =>
-		post.frontmatter ? post : { ...post, frontmatter: { ...post } }
-	);
+	const allPosts = (await Astro.glob<MarkdownFrontmatter>("./*.astro"))
+		.filter((post) => post.pubDate)
+		.map((post) =>
+			post.frontmatter ? post : { ...post, frontmatter: { ...post } }
+		);
 
 	const sortedPosts = allPosts.sort(
 		(a, b) =>
