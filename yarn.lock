@@ -65,10 +65,10 @@
     ultrahtml "^1.5.3"
     vite "^6.0.5"
 
-"@astrojs/rss@^4.0.9":
-  version "4.0.9"
-  resolved "https://registry.yarnpkg.com/@astrojs/rss/-/rss-4.0.9.tgz#aa906449914d49818ed91f1ce6aa643bbc6ee561"
-  integrity sha512-W1qeLc/WP1vMS5xXa+BnaLU0paeSeGjN8RJVAoBaOIkQuKXjIUA9hvPno89heo73in5i67g40gy70oeeHMqp6A==
+"@astrojs/rss@^4.0.11":
+  version "4.0.11"
+  resolved "https://registry.yarnpkg.com/@astrojs/rss/-/rss-4.0.11.tgz#7feff9646f62025f5348c90c21ea25d2bc48d86e"
+  integrity sha512-3e3H8i6kc97KGnn9iaZBJpIkdoQi8MmR5zH5R+dWsfCM44lLTszOqy1OBfGGxDt56mpQkYVtZJWoxMyWuUZBfw==
   dependencies:
     fast-xml-parser "^4.5.0"
     kleur "^4.1.5"
